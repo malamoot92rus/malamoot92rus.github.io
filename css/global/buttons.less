@@ -1,0 +1,85 @@
+.page-header__download-link {
+	color: #fff;
+	border-radius: 35px;
+	display: inline-block;
+	width: 90%;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 18px 0;
+	text-align: center;
+	border: 3px solid white;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+	position: relative;
+	z-index: 1;
+	&:hover {
+		background-color: #fff;
+		color: #d63163;
+	}
+}
+
+
+@media @tablet-width {
+
+	.page-header__download-link {
+	width: 85%;
+}
+	.footer__social-btn {
+	font-size: 0;
+	position: relative;
+	padding: 0px 35px;
+
+		
+		&:after {
+			content: "";
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			background: #c83a51 url("../img/sprite.png")no-repeat;
+			top: -10px;
+			border-radius: 50%;
+			border: 2px solid black;
+			cursor: pointer;
+			-webkit-transition: 0.4s;
+       		-moz-transition: 0.4s;
+        	-ms-transition: 0.4s;
+         	-o-transition: 0.4s;
+            transition: 0.4s;
+		}
+		&--vk {
+			&:after {
+				background-position: 7px -111px;
+			}
+			&:hover:after {
+				background-position: 7px -346px;
+			}
+		}
+		&--fb {
+			&:after {
+				background-position: 13px 7px;
+			}
+			&:hover:after {
+				background-position: 13px -228px;
+			}
+		}
+		&--yb {
+			&:after {
+				background-position: 10px -54px;
+			}
+			&:hover:after {
+				background-position: 10px -288px;
+			}
+		}
+
+}
+}
+
+@media @desktop-width {
+	.page-header__download-link {
+	width: 50%;
+	font-size: 21px;
+	line-height: 18px;
+}
+}

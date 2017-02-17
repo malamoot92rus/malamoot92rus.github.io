@@ -1,6 +1,6 @@
 .feedback {
 	padding-top: 60px;
-	padding-bottom: 50px;
+	padding-bottom: 70px;
 	&__wrapper {
 		.container-fluid();
 		min-height: 370px;
@@ -71,7 +71,7 @@
 	.feedback {
 		padding-top: 150px;
 		position: relative;
-
+		padding-bottom: 0px;
 		&:after {
 			content: "";
 			position: absolute;
@@ -83,7 +83,7 @@
 			transform: translateX(50%);
 		}
 		&__item {
-
+			
 			&-title {
 				font-size: 24px;
 			}
@@ -107,7 +107,7 @@
 			border: none;
 			cursor: pointer;
 			outline: none;
-			bottom: 40%;
+			top: 25%;
 
 			&--prev::after,
     		&--next::after {
@@ -115,7 +115,7 @@
         position: absolute;
         border-bottom: 16px solid transparent;
         border-top: 16px solid transparent;
-        top: -100px;
+        top: 0px;
         height: 0;
         right: 50%;
         transform: translate(50%, 50%);
